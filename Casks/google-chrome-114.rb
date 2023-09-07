@@ -14,7 +14,7 @@ cask "google-chrome-114" do
     end
   end
 
-  auto_updates true
+  auto_updates false
   depends_on macos: ">= :high_sierra"
 
   app "Google Chrome.app"
