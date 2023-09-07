@@ -7,12 +7,12 @@ cask "google-chrome-114" do
   desc "Web browser"
   homepage "https://www.google.com/chrome/"
 
-  livecheck do
-    url :url
-    strategy :extract_plist do |versions|
-      versions.values.map(&:short_version).compact.first
-    end
-  end
+  #livecheck do
+  #  url :url
+  #  strategy :extract_plist do |versions|
+  #    versions.values.map(&:short_version).compact.first
+  #  end
+  #end
 
   auto_updates false
   depends_on macos: ">= :high_sierra"
